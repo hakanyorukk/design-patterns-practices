@@ -1,0 +1,76 @@
+com.hakan.patterns/
+│
+├── behavioral/
+│ ├── strategy/
+│ │ ├── Duck.java— abstract base
+│ │ ├── FlyBehavior.java— interface
+│ │ ├── FlyWithWings.java— concrete behavior
+│ │ └── StrategyDemo.java— ch.1 · main() here
+│ ├── observer/
+│ │ ├── Subject.java— interface
+│ │ ├── Observer.java— interface
+│ │ ├── WeatherStation.java— concrete subject
+│ │ ├── PhoneDisplay.java— concrete observer
+│ │ └── ObserverDemo.java— ch.2 · main() here
+│ ├── command/
+│ │ ├── Command.java— interface
+│ │ ├── LightOnCommand.java— concrete command
+│ │ ├── RemoteControl.java— invoker
+│ │ └── CommandDemo.java— ch.6 · main() here
+│ ├── templatemethod/
+│ │ ├── CaffeineBeverage.java— abstract class
+│ │ ├── Coffee.java— concrete class
+│ │ ├── Tea.java— concrete class
+│ │ └── TemplateMethodDemo.java— ch.8 · main() here
+│ ├── iterator/
+│ │ ├── Menu.java— interface
+│ │ ├── DinerMenu.java— concrete
+│ │ └── IteratorDemo.java— ch.9 · main() here
+│ └── state/
+│ ├── State.java— interface
+│ ├── GumballMachine.java— context
+│ ├── SoldState.java— concrete state
+│ └── StateDemo.java— ch.10 · main() here
+│
+├── creational/
+│ ├── factory/
+│ │ ├── Pizza.java— abstract product
+│ │ ├── PizzaStore.java— creator
+│ │ ├── NYPizzaStore.java— concrete creator
+│ │ └── FactoryDemo.java— ch.4 · main() here
+│ ├── singleton/
+│ │ ├── Singleton.java— the class itself
+│ │ └── SingletonDemo.java— ch.5 · main() here
+│ └── builder/
+│ ├── House.java— product
+│ ├── HouseBuilder.java— builder interface
+│ ├── ConcreteHouseBuilder.java— concrete builder
+│ └── BuilderDemo.java— appendix · main() here
+│
+└── structural/
+├── decorator/
+│ ├── Beverage.java— abstract component
+│ ├── Espresso.java— concrete component
+│ ├── CondimentDecorator.java— abstract decorator
+│ ├── Mocha.java— concrete decorator
+│ └── DecoratorDemo.java— ch.3 · main() here
+├── adapter/
+│ ├── Duck.java— target interface
+│ ├── Turkey.java— adaptee interface
+│ ├── TurkeyAdapter.java— adapter
+│ └── AdapterDemo.java— ch.7 · main() here
+├── facade/
+│ ├── HomeTheaterFacade.java— facade class
+│ ├── Amplifier.java— subsystem
+│ ├── Projector.java— subsystem
+│ └── FacadeDemo.java— ch.7 · main() here
+├── composite/
+│ ├── MenuComponent.java— abstract component
+│ ├── MenuItem.java— leaf
+│ ├── Menu.java— composite
+│ └── CompositeDemo.java— ch.9 · main() here
+└── proxy/
+├── Subject.java— interface
+├── RealSubject.java— real object
+├── ProxySubject.java— proxy
+└── ProxyDemo.java— ch.11 · main() here
