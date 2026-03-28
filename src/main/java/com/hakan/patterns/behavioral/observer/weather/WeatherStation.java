@@ -1,5 +1,6 @@
 package com.hakan.patterns.behavioral.observer.weather;
 
+import com.hakan.patterns.behavioral.observer.weather.observer.AvgMinMaxDisplay;
 import com.hakan.patterns.behavioral.observer.weather.observer.CurrentConditionsDisplay;
 import com.hakan.patterns.behavioral.observer.weather.observer.ForecastDisplay;
 import com.hakan.patterns.behavioral.observer.weather.observer.StatisticsDisplay;
@@ -14,6 +15,8 @@ public class WeatherStation {
         StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
 
         ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
+
+        AvgMinMaxDisplay avgMinMaxDisplay = new AvgMinMaxDisplay(weatherData);
 
         weatherData.setMeasurements(80, 65, 30.4f);
         weatherData.setMeasurements(82, 70, 29.2f);
